@@ -2,7 +2,7 @@
   "name": "soleil_node_js",
   "version": "1.0.0",
   "description": "A repository to place our node projects",
-  "main": "server5.js",
+  "main": "student_tutor_API/server5.js",
   "scripts": {
     "test": "test"
   },
