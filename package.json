@@ -1,18 +1,28 @@
 {
   "name": "soleil_node_js",
-  "version": "0.0.1",
-  "private": "true",
-  "dependencies": {
-    "express": "4.13.1",
-    "http": "0.7.0",
-    "mongoose": "2.5.9",
-    "json": "9.0.3",
-    "body-parser": "1.13.2",
-    "serve-favicon": "2.3.0",
-    "path": "0.11.14"
+  "version": "1.0.0",
+  "description": "A repository to place our node projects",
+  "main": "server5.js",
+  "scripts": {
+    "test": "test"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm":"2.13.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soleiltw/soleil_node_js.git"
+  },
+  "author": "Sylvia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soleiltw/soleil_node_js/issues"
+  },
+  "homepage": "https://github.com/soleiltw/soleil_node_js#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "http": "0.0.0",
+    "json": "^9.0.3",
+    "mongoose": "^4.1.0",
+    "path": "^0.11.14",
+    "serve-favicon": "^2.3.0"
   }
 }
