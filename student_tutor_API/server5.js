@@ -8,8 +8,11 @@ var express = require('express')
   , json = require('json')
   , path = require('path')
   , favicon = require('serve-favicon')
-  , bodyParser = require('body-parser');
+  , bodyParser = require('body-parser')
+  , jwt = require('jsonwebtoken');
 
+var config = require('./config');
+var middleHandler = require("./middleHandler");
 var postQuestion = require("./postQuestion");
 var postStudent = require("./postStudent");
 var getStudentsAll = require("./getStudentsAll");
@@ -17,11 +20,17 @@ var getTutorsAll = require("./getTutorsAll");
 var getStudentById = require("./getStudentById");
 var getTutorById = require("./getTutorById");
 
+var signupUser = require("./signupUser");
+var loginUser = require("./loginUser");
+var listUser = require("./listUser");
+var profileUser = require("./profileUser");
+
 var app = express();
 
-mongoose.connect('mongodb://tina:tina123@ds037262.mongolab.com:37262/soleildb');
+mongoose.connect(config.database);
 
 app.set('port', process.env.PORT || 3000);
+app.set('superSecret', config.secret);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); 
@@ -33,7 +42,14 @@ http.createServer(app).listen(app.get('port'), function(){
 app.post('/question/add', postQuestion.post);
 app.post('/student/add', postStudent.post);
 
+app.post('/user/signup', signupUser.post);
+app.post('/user/login', loginUser.post);
+app.post('/users/list', middleHandler.middleHandler, listUser.get);
+app.post('/user/profile', middleHandler.middleHandler, profileUser.get);
+
 app.get('/students', getStudentsAll.get);
+app.get('/students/orderby/date/descending', getStudentsAll.getDateDesc);
+app.get('/students/orderby/date/ascending', getStudentsAll.getDateAsc);
 app.get('/tutors', getTutorsAll.get);
 app.get('/student/:id', getStudentById.get);
 app.get('/tutor/:id', getTutorById.get);
