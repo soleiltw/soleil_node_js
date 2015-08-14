@@ -28,7 +28,7 @@ function post(req, res){
           		message: 'Sign up',
           		token: token
         	});
-        	
+
 		} else {
 			//TODO: return page with errors
 			return console.log(err);

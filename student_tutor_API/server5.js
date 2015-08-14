@@ -30,7 +30,7 @@ var app = express();
 mongoose.connect(config.database);
 
 app.set('port', process.env.PORT || 3000);
-app.set('superSecret', config.secret);
+app.set('privateSecret', config.secret);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); 
