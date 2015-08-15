@@ -1,3 +1,90 @@
+/**
+ * @api {get} /student Get all Students
+ * @apiVersion 1.0.0
+ * @apiName List all students
+ * @apiGroup Student
+ *
+ *
+ * @apiSuccess {String} _id Id of the Student.
+ * @apiSuccess {String} name Name of the Student.
+ * @apiSuccess {String} created_at Creation time of the Student record.
+ *
+ * @apiSuccessExample Success-Response:
+ * HTTP/1.1 200 OK
+ * [
+ *   {
+ *     "_id": "55c0b2c5ec6ace9429a3af13",
+ *     "name": "sylvia",
+ *     "created_at": "2015-08-04T12:40:37.923Z"
+ *   },
+ *   {
+ *     "_id": "55c0ad094f653b4822c3c7ce",
+ *     "name": "jessy",
+ *     "created_at": "2015-08-04T12:16:09.061Z"
+ *   }
+ *	 ...
+ *  
+ * ]
+ */
+
+ /**
+ * @api {get} /students/orderby/date/descending Get all Students order by date descending
+ * @apiVersion 1.0.0
+ * @apiName List all students order by date descending
+ * @apiGroup Student
+ *
+ *
+ * @apiSuccess {String} _id Id of the Student.
+ * @apiSuccess {String} name Name of the Student.
+ * @apiSuccess {String} created_at Creation time of the Student record.
+ *
+ * @apiSuccessExample Success-Response:
+ * HTTP/1.1 200 OK
+ * [
+ *   {
+ *     "_id": "55c0b2c5ec6ace9429a3af13",
+ *     "name": "sylvia",
+ *     "created_at": "2015-08-04T12:40:37.923Z"
+ *   },
+ *   {
+ *     "_id": "55c0ad094f653b4822c3c7ce",
+ *     "name": "jessy",
+ *     "created_at": "2015-08-04T12:16:09.061Z"
+ *   },
+ *	 ...
+ *  
+ * ]
+ */
+
+ /**
+ * @api {get} /students/orderby/date/ascending Get all Students order by data ascending
+ * @apiVersion 1.0.0
+ * @apiName List all students order by data ascending
+ * @apiGroup Student
+ *
+ *
+ * @apiSuccess {String} _id Id of the Student.
+ * @apiSuccess {String} name Name of the Student.
+ * @apiSuccess {String} created_at Creation time of the Student record.
+ *
+ * @apiSuccessExample Success-Response:
+ * HTTP/1.1 200 OK
+ * [
+ *   {
+ *     "_id": "55c0ad094f653b4822c3c7ce",
+ *     "name": "jessy",
+ *     "created_at": "2015-08-04T12:16:09.061Z"
+ *   }
+ *   {
+ *     "_id": "55c0b2c5ec6ace9429a3af13",
+ *     "name": "sylvia",
+ *     "created_at": "2015-08-04T12:40:37.923Z"
+ *   },
+ *	 ...
+ *  
+ * ]
+ */
+ 
 var StudentModel = require('./models/student');
 
 function get(req, res){

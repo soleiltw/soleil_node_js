@@ -1,0 +1,918 @@
+define({ "api": [
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p> "
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./doc/main.js",
+    "group": "C__Users_peter_Documents_scripture_soleil_db_api_doc_main_js",
+    "groupTitle": "C__Users_peter_Documents_scripture_soleil_db_api_doc_main_js",
+    "name": ""
+  },
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p> "
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/grunt-apidoc/node_modules/apidoc/template/main.js",
+    "group": "C__Users_peter_Documents_scripture_soleil_db_api_node_modules_grunt_apidoc_node_modules_apidoc_template_main_js",
+    "groupTitle": "C__Users_peter_Documents_scripture_soleil_db_api_node_modules_grunt_apidoc_node_modules_apidoc_template_main_js",
+    "name": ""
+  },
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p> "
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./student_tutor_API/doc/main.js",
+    "group": "C__Users_peter_Documents_scripture_soleil_db_api_student_tutor_API_doc_main_js",
+    "groupTitle": "C__Users_peter_Documents_scripture_soleil_db_api_student_tutor_API_doc_main_js",
+    "name": ""
+  },
+  {
+    "type": "post",
+    "url": "/question/add",
+    "title": "Create a new Question",
+    "version": "1.0.0",
+    "name": "Create_a_new_Question",
+    "group": "Question",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Question's name to add.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "content",
+            "description": "<p>Content of the Question.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "subjectId",
+            "description": "<p>Reference to Subject of the Question.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "studentId",
+            "description": "<p>Reference to Student of the Question.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "answerId",
+            "description": "<p>Reference to Answer of the Question.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Question.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "content",
+            "description": "<p>Content of the Question.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "subjectId",
+            "description": "<p>Reference to Subject of the Question.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "studentId",
+            "description": "<p>Reference to Student of the Question.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "answerId",
+            "description": "<p>Reference to Answer of the Question.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n  \"content\": \"how to expert node.js\",\n  \"_refSubject\": \"55cfgjr5ec6ace9429a45678\",\n  \"_refStudent\": \"88crhbe5ec6ace9429a56897\",\n  \"_refAnswer\": \"35cerhg5ec6ace9429a12658\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/postQuestion.js",
+    "groupTitle": "Question"
+  },
+  {
+    "type": "post",
+    "url": "/student/add",
+    "title": "Create a new Student",
+    "version": "1.0.0",
+    "name": "Create_a_new_Student",
+    "group": "Student",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Student's name to add.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the Student record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n  \"name\": \"Sylvia\",\n  \"created_at\": \"2015-08-04T12:40:37.923Z\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/postStudent.js",
+    "groupTitle": "Student"
+  },
+  {
+    "type": "get",
+    "url": "/student",
+    "title": "Get all Students",
+    "version": "1.0.0",
+    "name": "List_all_students",
+    "group": "Student",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the Student record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n[\n  {\n    \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n    \"name\": \"sylvia\",\n    \"created_at\": \"2015-08-04T12:40:37.923Z\"\n  },\n  {\n    \"_id\": \"55c0ad094f653b4822c3c7ce\",\n    \"name\": \"jessy\",\n    \"created_at\": \"2015-08-04T12:16:09.061Z\"\n  }\n\t ...\n \n]",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getStudentsAll.js",
+    "groupTitle": "Student"
+  },
+  {
+    "type": "get",
+    "url": "/students/orderby/date/ascending",
+    "title": "Get all Students order by data ascending",
+    "version": "1.0.0",
+    "name": "List_all_students_order_by_data_ascending",
+    "group": "Student",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the Student record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n[\n  {\n    \"_id\": \"55c0ad094f653b4822c3c7ce\",\n    \"name\": \"jessy\",\n    \"created_at\": \"2015-08-04T12:16:09.061Z\"\n  }\n  {\n    \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n    \"name\": \"sylvia\",\n    \"created_at\": \"2015-08-04T12:40:37.923Z\"\n  },\n\t ...\n \n]",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getStudentsAll.js",
+    "groupTitle": "Student"
+  },
+  {
+    "type": "get",
+    "url": "/students/orderby/date/descending",
+    "title": "Get all Students order by date descending",
+    "version": "1.0.0",
+    "name": "List_all_students_order_by_date_descending",
+    "group": "Student",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the Student record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n[\n  {\n    \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n    \"name\": \"sylvia\",\n    \"created_at\": \"2015-08-04T12:40:37.923Z\"\n  },\n  {\n    \"_id\": \"55c0ad094f653b4822c3c7ce\",\n    \"name\": \"jessy\",\n    \"created_at\": \"2015-08-04T12:16:09.061Z\"\n  },\n\t ...\n \n]",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getStudentsAll.js",
+    "groupTitle": "Student"
+  },
+  {
+    "type": "get",
+    "url": "/student/:id",
+    "title": "Get a Student by Id",
+    "version": "1.0.0",
+    "name": "Select_student_by_id",
+    "group": "Student",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Student's unique ID.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Student.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the Student record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"_id\": \"55c0b2c5ec6ace9429a3af13\",\n  \"name\": \"Sylvia\",\n  \"created_at\": \"2015-08-04T12:40:37.923Z\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "StudentNotFound",
+            "description": "<p>The id of the Student was not found.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"StudentNotFound\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getStudentById.js",
+    "groupTitle": "Student"
+  },
+  {
+    "type": "get",
+    "url": "/tutors",
+    "title": "Get all Tutors",
+    "version": "1.0.0",
+    "name": "List_all_Tutors",
+    "group": "Tutor",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Tutor.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Tutor.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Document</p> ",
+            "optional": false,
+            "field": "_refSubject",
+            "description": "<p>Reference to Tutor's expert subject.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Document</p> ",
+            "optional": false,
+            "field": "_refOwnQuestion",
+            "description": "<p>Reference to Tutor's own question.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n[\n  {\n      \"_id\": \"55b7890f7640e70d96612bb1\",\n      \"name\": \"anderson\",\n      \"_refSubject\": {\n          \"_id\": \"55b198f0e4b03e734e912c89\",\n          \"subject\": \"english\"\n      },\n      \"_refOwnQuestion\": {\n      \t \"_id\": \"55b4d34be4b01d0a17cddfae\",\n      \t \"content\": \"struggle in ref\"\n      }\n  },\n  {\n      \"_id\": \"55b78b2281b9334c20282127\",\n      \"name\": \"Jenny\",\n      \"_refSubject\": {\n          \"_id\": \"55b198d1e4b03e734e912c87\",\n          \"subject\": \"math\"\n      },\n      \"_refSubject2\": {\n          \"_id\": \"55b787c3b7c3c55a951b8071\",\n          \"subject\": \"english\"\n      },\n      \"_refOwnQuestion\": {\n      \t \"_id\": \"55cf0962e4b03e3f715048a7\",\n      \t \"content\": \"how to expert node.js\"\n      }\n  },\n\t ...\n \n]",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getTutorsAll.js",
+    "groupTitle": "Tutor"
+  },
+  {
+    "type": "get",
+    "url": "/tutor/:id",
+    "title": "Get a Tutor by Id",
+    "version": "1.0.0",
+    "name": "Select_tutor_by_id",
+    "group": "Tutor",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Tutor's unique ID.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the Tutor.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Tutor.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Document</p> ",
+            "optional": false,
+            "field": "_refSubject",
+            "description": "<p>Reference to Tutor's expert subject.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Document</p> ",
+            "optional": false,
+            "field": "_refOwnQuestion",
+            "description": "<p>Reference to Tutor's own question.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"_id\": \"55b7890f7640e70d96612bb1\",\n  \"name\": \"anderson\",\n  \"_refSubject\": {\n      \"_id\": \"55b198f0e4b03e734e912c89\",\n      \"subject\": \"english\"\n  },\n  \"_refOwnQuestion\": {\n      \"_id\": \"55b4d34be4b01d0a17cddfae\",\n      \"content\": \"struggle in ref\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "TutorNotFound",
+            "description": "<p>The id of the Tutor was not found.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"TutorNotFound\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/getTutorById.js",
+    "groupTitle": "Tutor"
+  },
+  
+  
+  {
+    "type": "post",
+    "url": "/users/list",
+    "title": "List all Users",
+    "version": "1.0.0",
+    "name": "List_all_Users",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Verified token to authenticate.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>Password of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the User record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n[\n  {\n      \"_id\": \"55c885ca1718dbc409d77352\",\n      \"name\": \"angela\",\n      \"password\": \"********\",\n      \"created_at\": \"2015-08-10T11:06:50.251Z\"\n  },\n  {\n      \"_id\": \"55c8870a3202050821971d47\",\n      \"name\": \"sylvia\",\n      \"password\": \"******\",\n      \"created_at\": \"2015-08-10T11:12:10.154Z\"\n  },\n  ...\n]",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NoTokenProvided",
+            "description": "<p>No token provided.</p> "
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NoAccessRight",
+            "description": "<p>Only with authenticated token can access the data.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Request denied.\n{\n  \"success\": false,\n  \"message\": \"No token provided.\"  \n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/listUser.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "/user/login",
+    "title": "Login a User",
+    "version": "1.0.0",
+    "name": "Login_a_User",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>User's name to add.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>User's password to encrypt.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>boolean</p> ",
+            "optional": false,
+            "field": "success",
+            "description": "<p>If the request has suceeded.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "message",
+            "description": "<p>The action of the request.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Token of the User.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"success\": true,\n  \"message\": \"User login\",\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.\n            eyJfX3YiOjAsIm5hbWUiOiJ5dXkiLCJwYXNzd29yZCI6InNvbGVpbCIsIl9pZCI6IjU1Y2YyMjQ4YTg4YjlhMDMwMDJmM2Q4NSIsImNyZWF0ZWRfYXQiOiIyMDE1LTA4LTE1VDExOjI4OjA4Ljk4NVoifQ.\n            ijvidIxKSms5iovehxxIHlDsJyFeYLe63lKzvtZ7wa4\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "WrongUsername",
+            "description": "<p>Authentication failed. User not found.</p> "
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "WrongPassword",
+            "description": "<p>Authentication failed. Wrong password.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Request denied.\n{\n  \"success\": false,\n  \"message\": \"Authentication failed. User not found.\"  \n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/loginUser.js",
+    "groupTitle": "User"
+  },
+  
+  {
+    "type": "post",
+    "url": "/user/profile",
+    "title": "Show User profile",
+    "version": "1.0.0",
+    "name": "Show_User_profile",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Verified token to authenticate.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "_id",
+            "description": "<p>Id of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>Password of the User.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>Creation time of the User record.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n  {\n      \"_id\": \"55c885ca1718dbc409d77352\",\n      \"name\": \"angela\",\n      \"password\": \"********\",\n      \"created_at\": \"2015-08-10T11:06:50.251Z\"\n  }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NoTokenProvided",
+            "description": "<p>No token provided.</p> "
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NoAccessRight",
+            "description": "<p>Only with authenticated token can access the data.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Request denied.\n{\n  \"success\": false,\n  \"message\": \"No token provided.\"  \n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/profileUser.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "/user/signup",
+    "title": "Sign up a User",
+    "version": "1.0.0",
+    "name": "Sign_up_a_User",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>User's name to add.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>User's password to encrypt.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>boolean</p> ",
+            "optional": false,
+            "field": "success",
+            "description": "<p>If the request has suceeded.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "message",
+            "description": "<p>The action of the request.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Token of the User.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"success\": true,\n  \"message\": \"Sign up\",\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.\n            eyJfX3YiOjAsIm5hbWUiOiJ5dXkiLCJwYXNzd29yZCI6InNvbGVpbCIsIl9pZCI6IjU1Y2YyMjQ4YTg4YjlhMDMwMDJmM2Q4NSIsImNyZWF0ZWRfYXQiOiIyMDE1LTA4LTE1VDExOjI4OjA4Ljk4NVoifQ.\n            ijvidIxKSms5iovehxxIHlDsJyFeYLe63lKzvtZ7wa4\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./student_tutor_API/signupUser.js",
+    "groupTitle": "User"
+  }
+] });

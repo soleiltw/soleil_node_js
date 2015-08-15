@@ -1,3 +1,28 @@
+/**
+ * @api {post} /user/signup Sign up a User
+ * @apiVersion 1.0.0
+ * @apiName Sign up a User
+ * @apiGroup User
+ *
+ * @apiParam {String} name User's name to add.
+ * @apiParam {String} password User's password to encrypt.
+ *
+ * @apiSuccess {boolean} success If the request has suceeded.
+ * @apiSuccess {String} message The action of the request.
+ * @apiSuccess {String} token Token of the User.
+ *
+ * @apiSuccessExample Success-Response:
+ *     HTTP/1.1 200 OK
+ *     {
+ *       "success": true,
+ *       "message": "Sign up",
+ *       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+ *                 eyJfX3YiOjAsIm5hbWUiOiJ5dXkiLCJwYXNzd29yZCI6InNvbGVpbCIsIl9pZCI6IjU1Y2YyMjQ4YTg4YjlhMDMwMDJmM2Q4NSIsImNyZWF0ZWRfYXQiOiIyMDE1LTA4LTE1VDExOjI4OjA4Ljk4NVoifQ.
+ *                 ijvidIxKSms5iovehxxIHlDsJyFeYLe63lKzvtZ7wa4"
+ *     }
+ *
+ */
+
 var UserModel = require('./models/user');
 var config = require('./config');
 var jwt = require('jsonwebtoken');

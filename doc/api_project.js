@@ -1,0 +1,15 @@
+define({
+  "title": "Soleil apiDoc for MongoDB",
+  "url": "https://soleil-db-api.herokuapp.com",
+  "name": "soleil_node_js",
+  "version": "1.0.0",
+  "description": "A repository to place our node projects",
+  "sampleUrl": false,
+  "apidoc": "0.2.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2015-08-15T12:31:22.110Z",
+    "url": "http://apidocjs.com",
+    "version": "0.13.1"
+  }
+});

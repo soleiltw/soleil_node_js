@@ -1,29 +1,29 @@
 /**
- * @api {get} /student/:id Get student by id
- * @apiName getStudentById
+ * @api {get} /student/:id Get a Student by Id
+ * @apiVersion 1.0.0
+ * @apiName Select student by id
  * @apiGroup Student
  *
- * @apiParam {Number} id Student unique ID.
+ * @apiParam {String} id Student's unique ID.
  *
- * @apiSuccess {String} _id Id of the User.
- * @apiSuccess {String} name Name of the User.
- * @apiSuccess {String} created_at Created time.
+ * @apiSuccess {String} _id Id of the Student.
+ * @apiSuccess {String} name Name of the Student.
+ * @apiSuccess {String} created_at Creation time of the Student record.
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "_id": "55c0ad094f653b4822c3c7ce",
- *       "name": "jessy",
- *       "created_at": "2015-08-04T12:16:09.061Z",
- *       "__v": 0
+ *       "_id": "55c0b2c5ec6ace9429a3af13",
+ *       "name": "Sylvia",
+ *       "created_at": "2015-08-04T12:40:37.923Z"
  *     }
  *
- * @apiError UserNotFound The id of the User was not found.
+ * @apiError StudentNotFound The id of the Student was not found.
  *
  * @apiErrorExample Error-Response:
  *     HTTP/1.1 404 Not Found
  *     {
- *       "error": "UserNotFound"
+ *       "error": "StudentNotFound"
  *     }
  */
 
