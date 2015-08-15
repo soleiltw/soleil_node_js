@@ -97,13 +97,6 @@ define({ "api": [
             "group": "Parameter",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "name",
-            "description": "<p>Question's name to add.</p> "
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
             "field": "content",
             "description": "<p>Content of the Question.</p> "
           },
@@ -152,21 +145,21 @@ define({ "api": [
             "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "subjectId",
+            "field": "_refSubject",
             "description": "<p>Reference to Subject of the Question.</p> "
           },
           {
             "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "studentId",
+            "field": "_refStudent",
             "description": "<p>Reference to Student of the Question.</p> "
           },
           {
             "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "answerId",
+            "field": "_refAnswer",
             "description": "<p>Reference to Answer of the Question.</p> "
           }
         ]
