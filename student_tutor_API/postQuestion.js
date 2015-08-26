@@ -37,19 +37,56 @@ function post(req, res){
 	question = new QuestionModel({
 		content: req.body.content,
 		_refSubject: req.body.subjectId,
-        _refStudent: req.body.studentId,
-        _refAnswer: req.body.answerId
+        _refStudent: req.body.studentId
 	});
 	
-	question.save(function (err) {
-		if (!err) {
-			return console.log("created");
+	StudentModel.findOne({_id: req.body.studentId },function (error, student) {
+
+		if(student.quota != 0){
+			console.log(student.quota);
+			question.save(function (err) {
+				if (!err) {
+					console.log(student);
+					console.log("created");
+					
+				} else {
+					//TODO: return page with errors
+					console.log("err");
+					return console.log(err);
+				}
+			});
+
+			student.quota -= 1;
+  			student.save(function(err) {
+  				console.log("quota-1");
+    			if (err) { return next(err); }
+  			});	
+
+			/*
+			var myDate = new Date();
+			myDate.setMinutes(myDate.getMinutes() + 1);
+
+			new CronJob(myDate, function() {
+
+				console.log("quota+1");
+    				student.quota += 1;
+  					student.save(function(err) {
+    					if (err) { return next(err); }
+  					});	
+  				//runs once at the specified date. 
+  				}, function () {
+    				// This function is executed when the job stops 
+
+  				},
+  				true,  //Start the job right now 
+  				'America/Los_Angeles'  // Time zone of this job. 
+			);*/
+
 		} else {
-			//TODO: return page with errors
-			return console.log(err);
+			res.send('The quota of asking question is 0 now!');
 		}
 	});
-
 }
+
 
 exports.post = post;
