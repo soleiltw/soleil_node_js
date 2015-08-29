@@ -1,5 +1,7 @@
 var StudentModel = require('./models/student');
 var CronJob = require('cron').CronJob;
+
+function job(){
 var job = new CronJob('00 55 18 * * 0-6', function() {
   /*
    * Runs everyday
@@ -27,3 +29,6 @@ var job = new CronJob('00 55 18 * * 0-6', function() {
   true, /* Start the job right now */
   'Asia/Taipei' /* Time zone of this job. */
 );
+}
+
+exports.job = job;

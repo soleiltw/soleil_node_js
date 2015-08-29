@@ -12,6 +12,7 @@ var express = require('express')
 
 var config = require('./config');
 var middleHandler = require("./middleHandler");
+var cronjob = require("./cronjob");
 
 var app = express();
 
@@ -25,5 +26,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
+  cronjob.job;
 });
 
